@@ -88,7 +88,7 @@
           reason: "メールヘッダインジェクション（\\n, BCC:）",
         },
         {
-          input: "<script>alert(1)</scr+ipt>",
+          input: "&lt;script&gt;alert(1)&lt;/script&gt;",
           expected: "NG",
           reason: "XSS／タグ挿入",
         },
